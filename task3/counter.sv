@@ -1,5 +1,5 @@
 module counter #(
-    parameter WIDTH = 8
+    parameter WIDTH = 9
 )(
 // interface signals
 input   logic           clk,
@@ -12,7 +12,6 @@ output  logic [WIDTH-1:0] count
 always_ff @ (posedge clk)
     if (rst) count <= {WIDTH{1'b0}};
     else if (en) count <= count + incr;
-    else count<= count;
 
 
 

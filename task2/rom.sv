@@ -5,7 +5,7 @@ module rom #(
     input logic                     clk,
     input logic [ADDRESS_WIDTH-1:0] addr1,
     output logic [DATA_WIDTH-1:0]   dout1,
-    input logic [DATA_WIDTH-1:0]    phase_offset,
+    //input logic [DATA_WIDTH-1:0]    phase_offset,
     input logic [ADDRESS_WIDTH-1:0] addr2,
     output logic [DATA_WIDTH-1:0]   dout2
 );
